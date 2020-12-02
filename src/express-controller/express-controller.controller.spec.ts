@@ -9,7 +9,9 @@ describe('ExpressControllerController', () => {
       controllers: [ExpressControllerController],
     }).compile();
 
-    controller = module.get<ExpressControllerController>(ExpressControllerController);
+    controller = module.get<ExpressControllerController>(
+      ExpressControllerController,
+    );
   });
 
   it('should be defined', () => {
