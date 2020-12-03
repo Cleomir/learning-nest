@@ -6,9 +6,10 @@ import { ExpressControllerController } from './express-controller/express-contro
 import { ServiceController } from './service/service.controller';
 import { ServiceService } from './service/service.service';
 import { ModuleModule } from './module/module.module';
+import { ExceptionsModule } from './exceptions/exceptions.module';
 
 @Module({
-  imports: [ModuleModule],
+  imports: [ModuleModule, ExceptionsModule],
   controllers: [
     AppController,
     ControllerController,
