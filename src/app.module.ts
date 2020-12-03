@@ -7,6 +7,8 @@ import { ServiceController } from './service/service.controller';
 import { ServiceService } from './service/service.service';
 import { ModuleModule } from './module/module.module';
 import { ExceptionsModule } from './exceptions/exceptions.module';
+import { PipesController } from './pipes/pipes.controller';
+import { PipesService } from './pipes/pipes.service';
 
 @Module({
   imports: [ModuleModule, ExceptionsModule],
@@ -15,7 +17,8 @@ import { ExceptionsModule } from './exceptions/exceptions.module';
     ControllerController,
     ExpressControllerController,
     ServiceController,
+    PipesController,
   ],
-  providers: [AppService, ServiceService],
+  providers: [AppService, ServiceService, PipesService],
 })
 export class AppModule {}

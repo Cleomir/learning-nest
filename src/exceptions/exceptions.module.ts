@@ -5,6 +5,6 @@ import { HttpExceptionFilter } from './http-exception.filter';
 
 @Module({
   controllers: [ExceptionsControllerController],
-  providers: [{ provide: APP_FILTER, useClass: HttpExceptionFilter }],
+  // providers: [{ provide: APP_FILTER, useClass: HttpExceptionFilter }],
 })
 export class ExceptionsModule {}
