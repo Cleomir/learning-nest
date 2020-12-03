@@ -7,10 +7,10 @@ import {
 } from '@nestjs/common';
 import { HttpExceptionFilter } from './http-exception.filter';
 
+// @UseFilters(HttpExceptionFilter)
 @Controller('exceptions-controller')
 export class ExceptionsControllerController {
   @Get()
-  @UseFilters(new HttpExceptionFilter())
   async findAll() {
     throw new HttpException({ message: 'Forbidden' }, HttpStatus.FORBIDDEN);
   }
