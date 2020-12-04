@@ -5,6 +5,7 @@ import { ControllerController } from './controller/controller.controller';
 import { ExpressControllerController } from './express-controller/express-controller.controller';
 import { ServiceController } from './service/service.controller';
 import { ServiceService } from './service/service.service';
+import { MyLogger } from './service/logger.service';
 import { ModuleModule } from './module/module.module';
 import { ExceptionsModule } from './exceptions/exceptions.module';
 import { PipesController } from './pipes/pipes.controller';
@@ -21,6 +22,6 @@ import { GuardsController } from './guards/guards.controller';
     PipesController,
     GuardsController,
   ],
-  providers: [AppService, ServiceService, PipesService],
+  providers: [AppService, ServiceService, PipesService, MyLogger],
 })
 export class AppModule {}
