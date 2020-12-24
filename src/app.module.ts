@@ -11,9 +11,10 @@ import { ExceptionsModule } from './exceptions/exceptions.module';
 import { PipesController } from './pipes/pipes.controller';
 import { PipesService } from './pipes/pipes.service';
 import { GuardsController } from './guards/guards.controller';
+import { SocketsModule } from './sockets/sockets.module';
 
 @Module({
-  imports: [ModuleModule, ExceptionsModule],
+  imports: [ModuleModule, ExceptionsModule, SocketsModule],
   controllers: [
     AppController,
     ControllerController,
